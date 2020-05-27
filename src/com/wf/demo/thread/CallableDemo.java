@@ -26,7 +26,7 @@ public class CallableDemo {
 class MyThread implements Callable<Integer> {
 
     @Override
-    public Integer call() throws Exception {
+    public Integer call() {
 
         System.out.println("Callable come in");
         try {

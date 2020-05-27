@@ -24,9 +24,9 @@ public class CountDownLatchDemo {
 
     private static void before() {
         for (int i = 1; i <= 6; i++) {
-            new Thread(() -> {
-                System.out.println(Thread.currentThread().getName() + "\t 加班中。。。");
-            }, String.valueOf(i)).start();
+            new Thread(() ->
+                System.out.println(Thread.currentThread().getName() + "\t 加班中。。。")
+            , String.valueOf(i)).start();
         }
         try {
             TimeUnit.MILLISECONDS.sleep(100);
