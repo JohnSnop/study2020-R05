@@ -1,8 +1,6 @@
 package com.wf.demo.java8;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.ToString;
+import lombok.*;
 
 /**
  * @author wf
@@ -10,10 +8,13 @@ import lombok.ToString;
  * @desc
  **/
 @Data
-@AllArgsConstructor
 @ToString
+@AllArgsConstructor
+@NoArgsConstructor
+@RequiredArgsConstructor
 public class Employee {
     private String name;
+    @NonNull
     private int age;
     private double salary;
 }
