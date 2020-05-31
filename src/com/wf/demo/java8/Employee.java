@@ -13,8 +13,22 @@ import lombok.*;
 @NoArgsConstructor
 @RequiredArgsConstructor
 public class Employee {
+    @NonNull
     private String name;
     @NonNull
     private int age;
+    @NonNull
     private double salary;
+
+    private STATUS status;
+
+    public Employee(int age) {
+        this.age = age;
+    }
+
+    public enum STATUS {
+        FREE,
+        BUSY,
+        HOLIDAY;
+    }
 }
