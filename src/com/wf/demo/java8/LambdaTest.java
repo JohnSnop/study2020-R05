@@ -82,7 +82,6 @@ public class LambdaTest {
 
     @Test
     public void test2() {
-        TreeSet<Integer> treeSet = new TreeSet<>((x, y) ->
-                Integer.compare(x, y));
+        TreeSet<Integer> treeSet = new TreeSet<>(Integer::compareTo);
     }
 }
