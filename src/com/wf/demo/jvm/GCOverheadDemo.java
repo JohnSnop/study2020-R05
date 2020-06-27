@@ -17,7 +17,9 @@ public class GCOverheadDemo {
             while (true) {
                 list.add(String.valueOf(++i).intern());
             }
+            // java.lang.OutOfMemoryError: GC overhead limit exceeded
         } catch (Throwable t) {
+            System.out.println("*********i= " + i);
             t.printStackTrace();
             throw t;
         }

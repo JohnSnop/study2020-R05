@@ -13,7 +13,8 @@ public class SerialTest {
 
     @Test
     public void serialize() throws IOException {
-        Student student = new Student("Wf", 18, 101, "abc");
+        // Student student = new Student("Wf", 18, 101, "abc");
+        Student student = new Student("Wf", 18, 99, "abc");
         ObjectOutputStream stream = new ObjectOutputStream(new FileOutputStream(new File("student.txt")));
         stream.writeObject(student);
         stream.close();

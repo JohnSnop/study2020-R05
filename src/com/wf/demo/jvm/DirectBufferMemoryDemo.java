@@ -12,7 +12,7 @@ import java.nio.ByteBuffer;
 public class DirectBufferMemoryDemo {
     // -Xms10m -Xmx10m -XX:+PrintGCDetails -XX:MaxDirectMemorySize=5m
     public static void main(String[] args) {
-        System.out.println(VM.maxDirectMemory() / 1024.0/ 1024 + ":Mb");
+        System.out.println(VM.maxDirectMemory() / 1024.0/ 1024 + ":MB");
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
