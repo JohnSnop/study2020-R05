@@ -1,7 +1,5 @@
 package com.wf.demo.concurrent;
 
-import lombok.val;
-
 import java.util.concurrent.TimeUnit;
 
 /**
